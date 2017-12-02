@@ -9,9 +9,6 @@ with open('input.txt') as f:
                 break;
         if digits[i] == digits[i+1]:
             sum += int(digits[i])
-
-
-    for i in range(len(digits)):
         jump = int(len(digits)/2)
         if digits[i] == digits[(i+jump) % len(digits)]:
             sumhalf += int(digits[i])
